@@ -384,8 +384,8 @@ module.exports = {
           let groupMetadata = await this.groupMetadata(jid)
           for (let user of participants) {
             // let pp = './src/avatar_contact.png'
-            let pp = 'https://i.ibb.co/jr9Nh6Q/Thumb.jpg'
-            let ppgc = 'https://i.ibb.co/jr9Nh6Q/Thumb.jpg'
+            let pp = 'https://i.ibb.co/JtsqzRW/Thumb.jpg'
+            let ppgc = 'https://i.ibb.co/JtsqzRW/Thumb.jpg'
             try {
               pp = await uploadImage(await (await fetch(await this.getProfilePicture(user))).buffer())
               ppgc = await uploadImage(await (await fetch(await this.getProfilePicture(jid))).buffer())
@@ -486,10 +486,10 @@ global.dfail = (type, m, conn) => {
     rowner: 'Perintah ini hanya dapat digunakan oleh _*Pemilik Bot*_',
     owner: 'Perintah ini hanya dapat digunakan oleh _*Pemilik Bot*_',
     mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_',
-    premium: 'Perintah ini hanya untuk pengguna _*Premium*_',
+    premium: 'only _*Premium*_',
     group: 'Perintah ini hanya dapat digunakan di grup',
     private: 'Perintah ini hanya dapat digunakan di Chat Pribadi',
-    admin: 'Perintah ini hanya untuk *Admin* grup',
+    admin: 'only *Admin* grup',
     botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini',
     unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Arif.19*',
     nsfw: 'NSFW tidak aktif'

@@ -720,7 +720,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
-    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'https://chat.whatsapp.com/CLVbzE22JYKBS8QLCRcsX2', 'clone', '.jadibot', 'MAINGROUP', '.donasi', m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'MADE WITH ❤️‍🔥 BOT KINGDOM', 'clone', '.jadibot', 'BOTKINGDOM❤️‍🔥', '.donasi', m)
 
   } catch (e) {
 

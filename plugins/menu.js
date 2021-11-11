@@ -24,11 +24,11 @@ const defaultMenu = {
 
 %readmore`.trimStart(),
 
-  header: '┌─🔶〔 %category 〕',
+  header: '┌♨️〔 %category 〕',
 
-  body: '├🔷%cmd %islimit %isPremium',
+  body: '├🔖%cmd',
 
-  footer: '└────🔶\n',
+  footer: '└───♨️\n',
 
   after: `
 
@@ -720,7 +720,7 @@ let img = fs.readFileSync('src/donasi.jpg')
 
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
-    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'MADE WITH ❤️‍🔥 BOT KINGDOM', 'clone', '.jadibot', 'BOTKINGDOM❤️‍🔥', '.donasi', m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'MADE WITH ❤️ BOT KINGDOM  UPTime: *%time*', 'clone', '.jadibot', 'BOTKINGDOM', '.donasi', m)
 
   } catch (e) {
 

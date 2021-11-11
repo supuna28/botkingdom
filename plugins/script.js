@@ -27,6 +27,6 @@ handler.help = ['script']
 
 handler.tags = ['info']
 
-handler.command = /^sript(s|se)$/i
+handler.command = /^script$/i
 
 module.exports = handler

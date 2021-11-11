@@ -16,9 +16,7 @@ const defaultMenu = {
 
 ┌─〔 %me 〕
 
-├ Hai, %name!
-
-│
+├ Hai, %name
 
 └────
 
@@ -348,9 +346,9 @@ let img = fs.readFileSync('src/donasi.jpg')
 
           "title": `${ucapan()}, ${name}`.trim(),
 
-          "description": "© supuna",
+          "description": "© BOTKINGDOM",
 
-          "buttonText": "click here 👇",
+          "buttonText": "👾click here👾",
 
           "listType": "SINGLE_SELECT",
 
@@ -720,7 +718,7 @@ let img = fs.readFileSync('src/donasi.jpg')
 
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
-    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'MADE WITH ❤️ BOT KINGDOM  UPTime: *%time', 'clone', '.jadibot', 'BOTKINGDOM', '.donasi', m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'MADE WITH ❤️ BOT KINGDOM', 'clone', '.jadibot', 'BOTKINGDOM', '.donasi'. 'SCRIPT', '.script', m)
 
   } catch (e) {
 

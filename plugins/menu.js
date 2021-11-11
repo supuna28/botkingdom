@@ -24,11 +24,11 @@ const defaultMenu = {
 
 %readmore`.trimStart(),
 
-  header: '┌─〔 %category 〕',
+  header: '┌─🔶〔 %category 〕',
 
-  body: '├ %cmd %islimit %isPremium',
+  body: '├🔷%cmd %islimit %isPremium',
 
-  footer: '└────\n',
+  footer: '└────🔶\n',
 
   after: `
 
@@ -41,7 +41,7 @@ ${'```%npmdesc```'}
 }
 
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
-
+let img = fs.readFileSync('src/donasi.jpg')
   let tags
 
   let teks = `${args[0]}`.toLowerCase()

@@ -10,7 +10,7 @@ await conn.fakeReply(m.chat, 'Update script (private)', '0@s.whatsapp.net', 'Fas
 
 
 
-let stdout = execSync('git pull https://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@github.com/supuna28/botkingdom.git' + (isROwner && text ? ' ' + text : ''))
+let stdout = execSync('git pull https://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@github.com/supuna28/botkingdom.git' + (isROwner && text ? ' ' + text : ''))
 
 
 

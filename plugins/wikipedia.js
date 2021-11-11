@@ -35,7 +35,7 @@ let handler = async (m, { conn, text }) => {
   if (!text) throw `uhm.. cari apa?\n\ncontoh:\n.wiki nodejs`
   wikipedia(`${text}`).then(res => {
     m.reply(res.result.isi)
-  }).catch(() => { m.reply('මං දන්නැතෝ 😑) })
+  }).catch(() => { m.reply('NOT FOUND') })
 }
 handler.help = ['wikipedia <pencarian>']
 handler.tags = ['internet']

@@ -6,11 +6,11 @@ if (global.conn.user.jid == conn.user.jid) {
 
 
 
-await conn.fakeReply(m.chat, 'Update script from github.com/supuna28/buttonbot (private)', '0@s.whatsapp.net', 'Fast Update Github', 'status@broadcast')
+await conn.fakeReply(m.chat, 'Update script (private)', '0@s.whatsapp.net', 'Fast Update Github', 'status@broadcast')
 
 
 
-let stdout = execSync('git pull https://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@github.com/supuna28/buttonbot.git' + (isROwner && text ? ' ' + text : ''))
+let stdout = execSync('git pull https://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@github.com/supuna28/botkingdom.git' + (isROwner && text ? ' ' + text : ''))
 
 
 

@@ -1,5 +1,4 @@
 let fetch = require('node-fetch')
-let  img  =  fs . readFileSync ( 'src/donasi.jpg' )
 let handler = async (m, { conn }) => await conn.sendButtonLoc(m.chat, await (await fetch(fla + 'BOT KINGDOM')).buffer(), `
 
 ┌〔https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV 〕

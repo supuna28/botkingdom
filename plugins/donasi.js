@@ -1,18 +1,21 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn }) => await conn.sendButtonLoc(m.chat, await (await fetch(fla + 'BOT KINGDOM')).buffer(), `
 
-┌〔https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV 〕
+let fs = require('fs')
 
-├ ❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥
+let handler = async (m, { conn }) => {
 
-└────
+let img = fs.readFileSync('src/donasi.jpg')
 
-`.trim(), '© join', 'OK', '.donasi', m)
+conn.sendLoc(m.chat, img, `*[+] BOT KINGDOM [+]*
 
-handler.help = ['donasi']
+https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV
 
-handler.tags = ['info']
+}
 
-handler.command = /^dona(te|si)$/i
+handler.help = ['script']
+
+handler.tags = ['main']
+
+handler.command = /^(sc|script)$/i
 
 module.exports = handler

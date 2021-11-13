@@ -8,7 +8,9 @@ let img = fs.readFileSync('src/donasi.jpg')
 
 conn.sendLoc(m.chat, img, `*[+] BOT KINGDOM [+]*
 
-https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV
+Link GROUP:
+
+https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV`, global.footer, 'BACK MENU', '#menu', m)
 
 }
 

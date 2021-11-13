@@ -14,10 +14,10 @@ https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV`, global.footer, 'BACK MENU', '
 
 }
 
-handler.help = ['script']
+handler.help = ['group']
 
 handler.tags = ['main']
 
-handler.command = /^(sc|script)$/i
+handler.command = /^(donasi|group)$/i
 
 module.exports = handler

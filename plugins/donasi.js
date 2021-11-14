@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, isROwner }) => {
 
 if (global.conn.user.jid == conn.user.jid) {
 
-await conn.fakeReply(m.chat, 'BOT KINGDOM', '0@s.whatsapp.net', 'BOT KINGDOM', 'status@broadcast')
+await conn.fakeReply(m.chat, 'https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV', '0@s.whatsapp.net', 'JOIN', 'status@broadcast')
 
 }
 

@@ -23,7 +23,7 @@ let handler = async (m, { conn }) => await conn.sendButtonLoc(m.chat, await (awa
 
 `.trim(), '© BOTKINGDOM', 'OK', '.donasi', m)
 
-handler.help = ['script']
+ = ['script']
 
 handler.tags = ['info']
 
